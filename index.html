@@ -3,16 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Document title]</title>
-    <meta name="description" content="[A short description of this site for SEO]">
-    <meta name="author" content="[Your Name]">
+    <title>Agathe</title>
+    <meta name="description" content="Online store for Fashion&Clothing">
+    <meta name="author" content="Nadiia Dzhyhryniuk">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/befc96fbe3.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header class="page-header">
-      <a href="index.html" class="logo">Hello World<!-- Site logo --></a>
+      <a href="index.html" class="logo">Agathe<!-- Site logo --></a>
 
       <!-- Navigation menu and toggle button (non-functional) -->
       <button type="button" class="nav-toggle">
@@ -20,13 +21,14 @@
       </button>
       <nav aria-label="Primary" class="navigation">
         <ul class="menu">
-          <li><a href="#">Shop</a>
+          <li><a href="#">Home</a>
+          <li><a href="#">Shop All</a>
             <ul class="submenu">
-              <li><a href="#">Subcategory</a></li>
-              <li><a href="#">Subcategory</a></li>
-              <li><a href="#">Subcategory</a></li>
+              <li><a href="#">Women's Perfume</a></li>
+              <li><a href="#">Men's Cologne</a></li>
             </ul>
           </li>
+          <li><a href="#">Sale</a>
           <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
@@ -49,32 +51,29 @@
 
     <main class="products">
       <header class="heading">
-        <h1>Sale on [Category Name]</h1>
+        <h1>Sale on Women's Perfume</h1>
       </header>
 
       <!-- Filtering product form -->
       <form class="filters">
         <h2>Filters</h2>
-
         <div class="filter-options">
           <fieldset>
-            <legend>Colour</legend>
+            <legend>Brands</legend>
             <ul class="filter-list">
-              <li><input type="checkbox" name="colour" value="black" id="black"> <label for="black">Black</label></li>
-              <li><input type="checkbox" name="colour" value="white" id="white"> <label for="white">White</label></li>
-              <li><input type="checkbox" name="colour" value="grey" id="grey"> <label for="grey">Grey</label></li>
-              <li><input type="checkbox" name="colour" value="red" id="red"> <label for="red">Red</label></li>
-              <li><input type="checkbox" name="colour" value="blue" id="blue"> <label for="blue">Blue</label></li>
+              <li><input type="checkbox" name="brand" value="armani-beauty" id="armani-beauty"> <label for="armani-beauty">Armani Beauty</label></li>           
+              <li><input type="checkbox" name="brand" value="dior" id="dior"> <label for="dior">Dior</label></li>
+              <li><input type="checkbox" name="brand" value="dolce-gabbana" id="dolce-gabbana"> <label for="dolce-gabbana">DOLCE&GABBANA</label></li>
+              <li><input type="checkbox" name="brand" value="gucci" id="gucci"> <label for="gucci">Gucci</label></li>
+              <li><input type="checkbox" name="brand" value="versace" id="versace"> <label for="versace">Versace</label></li>
+              
             </ul>
           </fieldset>
           <fieldset>
             <legend>Sizes</legend>
             <ol class="filter-list">
-              <li><input type="checkbox" name="size" value="xs" id="xs"> <label for="xs">XS</label></li>
-              <li><input type="checkbox" name="size" value="sm" id="sm"> <label for="sm">S</label></li>
-              <li><input type="checkbox" name="size" value="md" id="md"> <label for="md">M</label></li>
-              <li><input type="checkbox" name="size" value="lg" id="lg"> <label for="lg">L</label></li>
-              <li><input type="checkbox" name="size" value="xl" id="xl"> <label for="xl">XL</label></li>
+              <li><input type="checkbox" name="size" value="mini" id="mini"> <label for="mini">Mini</label></li>
+              <li><input type="checkbox" name="size" value="value" id="value"> <label for="value">Value</label></li>
             </ol>
           </fieldset>
           <fieldset>
@@ -123,9 +122,10 @@
         <!-- Product 1 -->
         <article class="product">
           <header>
-            <img src="img/product.jpg" alt="Product Image">
-            <h3>Product Name</h3>
-            <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
+            <img src="img/versace-eros.jpg" alt="Versace Eros">
+            <h2>Versace</h2>
+            <h3>Eros</h3>
+            <data value="86"><del>$110.00</del> <ins>$86.00</ins></data>
             <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
             <dl>
               <dt>Rating</dt>
@@ -135,19 +135,12 @@
           </header>
           <form>
             <fieldset>
-              <legend>Colours</legend>
-              <ul>
-                <li><label><input type="radio" name="colour" value="r"> Red</label></li>
-                <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
-              </ul>
-            </fieldset>
-            <fieldset>
               <legend>Sizes</legend>
               <ol>
-                <li><label><input type="radio" name="size" value="m"> M</label></li>
-                <li><label><input type="radio" name="size" value="l"> L</label></li>
-                <li><label><input type="radio" name="size" value="xl"> XL</label></li>
+                <li><label><input type="radio" name="size" value="10ml"> 0.3 oz/ 10 mL Eau de Toilette Spray</label></li>
+                <li><label><input type="radio" name="size" value="50ml">1.7 oz/ 50 mL Eau de Toilette Spray</label></li>
+                <li><label><input type="radio" name="size" value="100ml"> 3.4 oz/ 100 mL Eau de Toilette Spray</label></li>
+                <li><label><input type="radio" name="size" value="200ml"> 6.7 oz/ 200 mL Eau de Toilette Spray</label></li>
               </ol>
             </fieldset>
           </form>
@@ -160,9 +153,10 @@
         <!-- Product 2 -->
         <article class="product">
           <header>
-            <img src="img/product.jpg" alt="Product Image">
-            <h3>Product Name</h3>
-            <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
+            <img src="img/sauvage.jpeg" alt="Dior Sauvage">
+            <h2>Dior</h2>
+            <h3>Sauvage Eau de Toilette</h3>
+            <data value="110"><del>$130.00</del> <ins>$110.00</ins></data>
             <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
             <dl>
               <dt>Rating</dt>
@@ -172,19 +166,11 @@
           </header>
           <form>
             <fieldset>
-              <legend>Colours</legend>
-              <ul>
-                <li><label><input type="radio" name="colour" value="r"> Red</label></li>
-                <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
-              </ul>
-            </fieldset>
-            <fieldset>
               <legend>Sizes</legend>
               <ol>
-                <li><label><input type="radio" name="size" value="m"> M</label></li>
-                <li><label><input type="radio" name="size" value="l"> L</label></li>
-                <li><label><input type="radio" name="size" value="xl"> XL</label></li>
+                <li><label><input type="radio" name="size" value="60ml"> 2 oz/ 60 mL Eau de Toilette Spray</label></li>
+                <li><label><input type="radio" name="size" value="100ml"> 3.4 oz/ 100 mL Eau de Toilette Spray</label></li>
+                <li><label><input type="radio" name="size" value="200ml"> 6.7 oz/ 200 mL Eau de Toilette Spray</label></li>
               </ol>
             </fieldset>
           </form>
@@ -197,9 +183,10 @@
         <!-- Product 3 -->
         <article class="product">
           <header>
-            <img src="img/product.jpg" alt="Product Image">
-            <h3>Product Name</h3>
-            <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
+            <img src="img/dolce-gabbana-the-only-one.jpg" alt="DOLCE&GABBANA The Only One 2">
+            <h2>DOLCE&GABBANA</h2>
+            <h3>The Only One 2</h3>
+            <data value="138"><del>$155.00</del> <ins>$138.00</ins></data>
             <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
             <dl>
               <dt>Rating</dt>
@@ -209,19 +196,10 @@
           </header>
           <form>
             <fieldset>
-              <legend>Colours</legend>
-              <ul>
-                <li><label><input type="radio" name="colour" value="r"> Red</label></li>
-                <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
-              </ul>
-            </fieldset>
-            <fieldset>
               <legend>Sizes</legend>
               <ol>
-                <li><label><input type="radio" name="size" value="m"> M</label></li>
-                <li><label><input type="radio" name="size" value="l"> L</label></li>
-                <li><label><input type="radio" name="size" value="xl"> XL</label></li>
+                <li><label><input type="radio" name="size" value="50ml"> 1.6 oz/ 50 mL Eau de Parfum Spray</label></li>
+                <li><label><input type="radio" name="size" value="100ml"> 3.3 oz/ 100 mL Eau de Parfum Spray</label></li>
               </ol>
             </fieldset>
           </form>
@@ -230,13 +208,13 @@
             <button type="button"><span class="material-icons">favorite</span></button>
           </footer>
         </article>
-  
         <!-- Product 4 -->
         <article class="product">
           <header>
-            <img src="img/product.jpg" alt="Product Image">
-            <h3>Product Name</h3>
-            <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
+            <img src="img/dior.jpg" alt="Miss Dior Eau de Parfum">
+            <h2>Dior</h2>
+            <h3>Miss Dior Eau de Parfum</h3>
+            <data value="99"><del>$115.00</del> <ins>$99.00</ins></data>
             <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
             <dl>
               <dt>Rating</dt>
@@ -246,19 +224,12 @@
           </header>
           <form>
             <fieldset>
-              <legend>Colours</legend>
-              <ul>
-                <li><label><input type="radio" name="colour" value="r"> Red</label></li>
-                <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
-              </ul>
-            </fieldset>
-            <fieldset>
               <legend>Sizes</legend>
               <ol>
-                <li><label><input type="radio" name="size" value="m"> M</label></li>
-                <li><label><input type="radio" name="size" value="l"> L</label></li>
-                <li><label><input type="radio" name="size" value="xl"> XL</label></li>
+                <li><label><input type="radio" name="size" value="30ml"> 1.0 oz/ 30 mL Eau de Parfum Spray</label></li>
+                <li><label><input type="radio" name="size" value="50ml"> 1.7 oz/ 50 mL Eau de Parfum Spray</label></li>
+                <li><label><input type="radio" name="size" value="100ml">  3.4 oz/ 100 mL Eau de Parfum Spray</label></li>
+                <li><label><input type="radio" name="size" value="150ml">  5 oz/ 150 mL Eau de Parfum Spray</label></li>
               </ol>
             </fieldset>
           </form>
@@ -268,12 +239,13 @@
           </footer>
         </article>
 
-        <!-- Product 5 -->
+        <!-- Product 5-->
         <article class="product">
           <header>
-            <img src="img/product.jpg" alt="Product Image">
-            <h3>Product Name</h3>
-            <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
+            <img src="img/gucci-flora-by-gucci-gorgeous-gardenia.jpg" alt="DOLCE&GABBANA The Only One 2">
+            <h2>Gucci</h2>
+            <h3>Flora By Gucci - Gorgeous Gardenia</h3>
+            <data value="99"><del>$115.00</del> <ins>$99.00</ins></data>
             <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
             <dl>
               <dt>Rating</dt>
@@ -283,19 +255,11 @@
           </header>
           <form>
             <fieldset>
-              <legend>Colours</legend>
-              <ul>
-                <li><label><input type="radio" name="colour" value="r"> Red</label></li>
-                <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
-              </ul>
-            </fieldset>
-            <fieldset>
               <legend>Sizes</legend>
               <ol>
-                <li><label><input type="radio" name="size" value="m"> M</label></li>
-                <li><label><input type="radio" name="size" value="l"> L</label></li>
-                <li><label><input type="radio" name="size" value="xl"> XL</label></li>
+                <li><label><input type="radio" name="size" value="7.4ml"> 0.25 oz/ 7.4 mL Eau de Toilette Rollerball</label></li>
+                <li><label><input type="radio" name="size" value="50ml"> 1.7 oz/ 50 mL Eau de Toilette Spray</label></li>
+                <li><label><input type="radio" name="size" value="50ml"> 3.4oz/100mL Eau de Toilette Spray</label></li>
               </ol>
             </fieldset>
           </form>
@@ -305,12 +269,13 @@
           </footer>
         </article>
 
-        <!-- Product 6 -->
+        <!-- Product 6-->
         <article class="product">
           <header>
-            <img src="img/product.jpg" alt="Product Image">
-            <h3>Product Name</h3>
-            <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
+            <img src="img/armani.jpg" alt="Armani Beauty Acqua Di Gio Pour Homme">
+            <h2>Armani Beauty</h2>
+            <h3>Acqua Di Gio Pour Homme</h3>
+            <data value="92"><del>$120.00</del> <ins>$92.00</ins></data>
             <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
             <dl>
               <dt>Rating</dt>
@@ -320,19 +285,9 @@
           </header>
           <form>
             <fieldset>
-              <legend>Colours</legend>
-              <ul>
-                <li><label><input type="radio" name="colour" value="r"> Red</label></li>
-                <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
-              </ul>
-            </fieldset>
-            <fieldset>
               <legend>Sizes</legend>
               <ol>
-                <li><label><input type="radio" name="size" value="m"> M</label></li>
-                <li><label><input type="radio" name="size" value="l"> L</label></li>
-                <li><label><input type="radio" name="size" value="xl"> XL</label></li>
+                <li><label><input type="radio" name="size" value="50ml"> 1.7 oz/ 50 mL Eau de Toilette Spray</label></li>
               </ol>
             </fieldset>
           </form>
@@ -341,6 +296,8 @@
             <button type="button"><span class="material-icons">favorite</span></button>
           </footer>
         </article>
+      
+        
       </section>
 
       <nav aria-label="Pagination" class="pagination">
@@ -356,10 +313,10 @@
     </main>
 
     <footer class="page-footer">
-      <ul class="social">
-        <li><a href="#"><span class="material-icons">face</span> Facebook</a></li>
-        <li><a href="#"><span class="material-icons">camera_alt</span> Instagram</a></li>
-        <li><a href="#"><span class="material-icons">alternate_email</span> Twitter</a></li>
+      <ul class="social">    
+        <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
       </ul>
       <nav aria-label="Legal">
         <ul class="legal">
@@ -368,7 +325,7 @@
           <li><a href="#">Accessibility Policy</a></li>
         </ul>
       </nav>
-      <p class="copyright">&copy; Copyright, 1991.</p>
+      <p class="copyright">&copy; 2021 by Agathe.</p>
     </footer>
 
   </body>
