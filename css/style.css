@@ -1,1 +1,44 @@
 /* Note there a few "reset" styles given in reset.css. Review those before you begin */
+html {
+	--primary-col: #ff3366;    /* main colour */
+	--primary-alt: #ff6699;    /* variant */
+	--primary-on: #ffffff;     /* for text or icons */
+	--secondary-col: #3399ff;
+	--secondary-alt: #99ccff;
+	--secondary-on: #000000;
+    --pad-and-gap: 1em;
+    
+}
+
+/*-------- General Styling---------*/
+body{
+    font-family: Forum;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    background-color: var(--primary-on);
+    color: var(--secondary-on);
+}
+
+.products, .page-header, .page-footer{
+    padding: 0px var(--pad-and-gap) 0 var(--pad-and-gap);
+}
+.your-products{
+    display: flex;
+}
+.pagination{
+    text-align: center;
+}
+.pages{
+    display: flex;
+    justify-content: center;
+}
+.pages > li,.social > li, .legal > li{
+    margin: calc(var(--pad-and-gap) / 2);
+}
+.social, .legal{
+    display: flex;
+    justify-content: flex-end;
+}
+.copyright{
+    text-align: right;
+}
