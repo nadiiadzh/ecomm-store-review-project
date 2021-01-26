@@ -24,6 +24,8 @@ body{
 }
 .your-products{
     display: flex;
+    grid-row: 1;
+    grid-column: 3;
 }
 .pagination{
     text-align: center;
@@ -41,4 +43,111 @@ body{
 }
 .copyright{
     text-align: right;
+}
+/*---------Smallest Viewport ("mobile")-------*/
+
+.page-header{
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+}
+.logo{
+    grid-row: 1;
+    grid-column: 1;
+}
+.nav-toggle{
+    grid-row: 1;
+    grid-column: 4;
+}
+.search{
+    grid-row: 2;
+    grid-column: 1 / span 4;
+
+}
+.navigation{
+    grid-row: 3;
+    grid-column: 1 / 5;
+}
+.filter-list{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/*------ Medium Viewport--------*/
+
+@media screen and (min-width:  40em) {
+
+    .products{
+        display: grid;
+        grid-template-columns: 15em auto;
+        gap: var(--pad-and-gap);
+    }
+    .heading, .pagination{
+        grid-column: span 2;
+    }
+    
+}
+
+/*------ Large Viewport--------*/
+
+@media screen and (min-width:  70em) {
+
+    .page-header{
+        grid-template-columns:  auto 1fr auto auto auto;
+    }
+    .nav-toggle{
+        display: none;
+    }
+    .search{
+        grid-row: 1;
+        grid-column: 3;
+    
+    }
+    .navigation{
+        grid-row: 1;
+        grid-column: 4;
+    }
+
+    .your-products{
+        grid-row: 1;
+        grid-column: 5;
+
+    }
+    .menu,.menu > li,.submenu,.filter-list{
+        display: flex;
+    }
+    .submenu{
+        padding-left: 0;
+    }
+    .products{
+        display: block;
+    }
+    .filter-options{
+        display: flex;
+       
+    }
+    .results{
+        display: grid;
+        grid-template-columns:  1fr 1fr;
+    }
+    .subheading{
+        grid-column: span 2;
+    }
+}
+
+/*------ Extra Large Viewport--------*/
+
+@media screen and (min-width:  90em) {
+
+    .filter-options{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .results{
+        display: grid;
+        grid-template-columns:  1fr 1fr 1fr;
+    }
+    .subheading{
+        grid-column: span 3;
+    }
 }
