@@ -4,32 +4,28 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agathe</title>
-    <meta name="description" content="Online store for Fashion&Clothing">
+    <meta name="description" content="Online store for Fragrance&Perfume">
     <meta name="author" content="Nadiia Dzhyhryniuk">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/logo.png"/>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/befc96fbe3.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header class="page-header">
-      <a href="index.html" class="logo">Agathe<!-- Site logo --></a>
+      <a href="index.html" class="logo"><img src="img/logo.png"></a><!-- Site logo -->
 
       <!-- Navigation menu and toggle button (non-functional) -->
-      <button type="button" class="nav-toggle">
-        <span class="material-icons">menu</span>
-      </button>
+      <a class="nav-toggle"><i class="fas fa-bars"></i></a>
+
       <nav aria-label="Primary" class="navigation">
         <ul class="menu">
           <li><a href="#">Home</a>
-          <li><a href="#">Shop All</a>
-            <ul class="submenu">
-              <li><a href="#">Women's Perfume</a></li>
-              <li><a href="#">Men's Cologne</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Sale</a>
+          <li><a href="#">Women's Perfume</a>
+          <li><a href="#">Men's Cologne</a>
           <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
@@ -37,16 +33,14 @@
 
       <!-- Search for a product (non-functional) -->
       <form class="search">
-        <label>Search
-          <input type="search" name="find" id="find">
-        </label>
-        <button type="button"><span class="material-icons">search</span></button>
+        <input type="search" name="find" class="find" placeholder="Search..." >
+        <a class="search-btn"><i class="fas fa-search search-icon"></i></a>
       </form>
 
       <!-- Additional links -->
       <ul class="your-products">
-        <li><a href="#"><span class="material-icons" aria-label="Favourites">favorite_border</span></a></li>
-        <li><a href="#"><span class="material-icons" aria-label="Items in your cart">shopping_cart</span></a></li>
+        <li><a href="#"><i class="fas fa-heart"></i></a></li>
+        <li><a href="#"><i class="fas fa-cart-plus"></i></a></li>
       </ul>
     </header>
 
@@ -57,7 +51,7 @@
 
       <!-- Filtering product form -->
       <form class="filters">
-        <h2>Filters</h2>
+        <h2>Filter By</h2>
         <div class="filter-options">
           <fieldset>
             <legend>Brands</legend>
@@ -119,7 +113,7 @@
 
       <section class="results">
         <h2 class="subheading">Results</h2>
-
+        <div class="grid">
         <!-- Product 1 -->
         <article class="product">
           <header>
@@ -127,12 +121,13 @@
             <h2>Versace</h2>
             <h3>Eros</h3>
             <data value="86"><del>$110.00</del> <ins>$86.00</ins></data>
-            <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
+            <p>Here is a shot of this product that might entice a user to click and add it to their cart.
+            <a href="#">see more</a></p>
             <dl>
-              <dt>Rating</dt>
-              <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
+              <dt>Rating:</dt>
+              <dd><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
             </dl>
-            <a href="#">see more</a>
+            
           </header>
           <form>
             <fieldset>
@@ -146,7 +141,7 @@
             </fieldset>
           </form>
           <footer>
-            <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
+            <button type="button"><span class="material-icons">add_shopping_cart</span>Add to Cart</button>
             <button type="button"><span class="material-icons">favorite</span></button>
           </footer>
         </article>
@@ -158,12 +153,12 @@
             <h2>Dior</h2>
             <h3>Sauvage Eau de Toilette</h3>
             <data value="110"><del>$130.00</del> <ins>$110.00</ins></data>
-            <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
+            <p>Here is a shot of this product that might entice a user to click and add it to their cart.
+            <a href="#">see more</a></p>
             <dl>
-              <dt>Rating</dt>
-              <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
+              <dt>Rating:</dt>
+              <dd><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
             </dl>
-            <a href="#">see more</a>
           </header>
           <form>
             <fieldset>
@@ -176,7 +171,7 @@
             </fieldset>
           </form>
           <footer>
-            <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
+            <button type="button"><span class="material-icons">add_shopping_cart</span>Add to Cart</button>
             <button type="button"><span class="material-icons">favorite</span></button>
           </footer>
         </article>
@@ -188,12 +183,12 @@
             <h2>DOLCE&GABBANA</h2>
             <h3>The Only One 2</h3>
             <data value="138"><del>$155.00</del> <ins>$138.00</ins></data>
-            <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
+            <p>Here is a shot of this product that might entice a user to click and add it to their cart.
+            <a href="#">see more</a></p>
             <dl>
-              <dt>Rating</dt>
-              <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
+              <dt>Rating:</dt>
+              <dd><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
             </dl>
-            <a href="#">see more</a>
           </header>
           <form>
             <fieldset>
@@ -205,7 +200,7 @@
             </fieldset>
           </form>
           <footer>
-            <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
+            <button type="button"><span class="material-icons">add_shopping_cart</span>Add to Cart</button>
             <button type="button"><span class="material-icons">favorite</span></button>
           </footer>
         </article>
@@ -216,12 +211,12 @@
             <h2>Dior</h2>
             <h3>Miss Dior Eau de Parfum</h3>
             <data value="99"><del>$115.00</del> <ins>$99.00</ins></data>
-            <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
+            <p>Here is a shot of this product that might entice a user to click and add it to their cart.
+            <a href="#">see more</a></p>
             <dl>
-              <dt>Rating</dt>
-              <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
+              <dt>Rating:</dt>
+              <dd><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
             </dl>
-            <a href="#">see more</a>
           </header>
           <form>
             <fieldset>
@@ -235,7 +230,7 @@
             </fieldset>
           </form>
           <footer>
-            <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
+            <button type="button"><span class="material-icons">add_shopping_cart</span>Add to Cart</button>
             <button type="button"><span class="material-icons">favorite</span></button>
           </footer>
         </article>
@@ -247,12 +242,13 @@
             <h2>Gucci</h2>
             <h3>Flora By Gucci - Gorgeous Gardenia</h3>
             <data value="99"><del>$115.00</del> <ins>$99.00</ins></data>
-            <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
+            <p>Here is a shot of this product that might entice a user to click and add it to their cart.
+            <a href="#">see more</a></p>
             <dl>
-              <dt>Rating</dt>
-              <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
+              <dt>Rating:</dt>
+              <dd><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
             </dl>
-            <a href="#">see more</a>
+           
           </header>
           <form>
             <fieldset>
@@ -265,7 +261,7 @@
             </fieldset>
           </form>
           <footer>
-            <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
+            <button type="button"><span class="material-icons">add_shopping_cart</span>Add to Cart</button>
             <button type="button"><span class="material-icons">favorite</span></button>
           </footer>
         </article>
@@ -277,12 +273,12 @@
             <h2>Armani Beauty</h2>
             <h3>Acqua Di Gio Pour Homme</h3>
             <data value="92"><del>$120.00</del> <ins>$92.00</ins></data>
-            <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
+            <p>Here is a shot of this product that might entice a user to click and add it to their cart.
+            <a href="#">see more</a></p>
             <dl>
-              <dt>Rating</dt>
-              <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
+              <dt>Rating:</dt>
+              <dd><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
             </dl>
-            <a href="#">see more</a>
           </header>
           <form>
             <fieldset>
@@ -293,12 +289,12 @@
             </fieldset>
           </form>
           <footer>
-            <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
+            <button type="button"><span class="material-icons">add_shopping_cart</span>Add to Cart</button>
             <button type="button"><span class="material-icons">favorite</span></button>
           </footer>
         </article>
       
-        
+      </div>
       </section>
 
       <nav aria-label="Pagination" class="pagination">
@@ -328,6 +324,6 @@
       </nav>
       <p class="copyright">&copy; 2021 by Agathe.</p>
     </footer>
-
+    <script src="js/script.js"></script>
   </body>
 </html>
