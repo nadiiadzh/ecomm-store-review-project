@@ -3,9 +3,6 @@ html {
 	--primary-col: #ff3366;    /* main colour */
 	--primary-alt: #ff6699;    /* variant */
 	--primary-on: #ffffff;     /* for text or icons */
-	--secondary-col: #3399ff;
-	--secondary-alt: #99ccff;
-	--secondary-on: #000000;
     --pad-and-gap: 1em;
 
     --col-1: #15112b;
@@ -22,15 +19,17 @@ body{
    font-family:  'Forum', 'Helvetica Neue', sans-serif;
     font-size: 1.1rem;
     line-height: 1.4rem;
-    background-color: var(--primary-on);
-    color: var(--secondary-on);
+    width: 100%;
 }
+
 .pagination a{
     color: var(--col-6);
 }
-
 .product a{
     color: red;
+    text-align: right;
+    padding-right: var(--pad-and-gap);
+    
 }
 a{
     color: var(--col-2);
@@ -39,9 +38,10 @@ a:hover{
     color: var(--col-3);
 
 }
+/*-----header-----*/
 .page-header{
     background-color: var(--col-6);
-    color: #eee0d7;
+    color: var(--col-2);
 }
 .logo{
     width: 35%;
@@ -55,7 +55,6 @@ a:hover{
 }
 .heading{
     width: 100%;
-    color: #efe2d9;
     text-align: center;
     height: 250px;
     background-image: url(../img/sara-saleh-cpisiUDKAqE-unsplash.jpg);
@@ -91,24 +90,31 @@ a:hover{
 }
 
 .product dl{
-    display: flex;
-    grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-columns: auto auto 1fr;
 }
 .product dd{
     margin: 0;
     padding-left: var(--pad-and-gap) ;
 }
-.product button{
-    margin-top: var(--pad-and-gap) ;
-    color: var(--col-3);
-    border: 1px solid var(--col-3); 
-    background: var(--col-6); 
-    font-size: 1em;
-    font-style: italic;
-    font-size: 22px;
-    text-align: center;
-    padding: 5px;
 
+.product button{
+    width: 100%;
+    margin-top: var(--pad-and-gap) ;
+    color: red;
+    border: 1px solid var(--col-1); 
+    border-radius: 8px;
+    font-size: 1em;
+    font-family: 'open-sans';
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    background: transparent;
+
+}
+.product button:hover{
+    color: var(--col-3);
+    background-color: var(--col-6);
 }
 .page-footer{
     background-color: var(--col-6);
