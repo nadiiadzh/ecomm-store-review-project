@@ -51,7 +51,7 @@ a:hover{
 }
 .search{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
 }
 .heading{
     width: 100%;
@@ -181,10 +181,8 @@ a:hover{
     text-align: center;
     grid-row: 3;
     grid-column: 1 / 5;
-    padding: calc(var(--pad-and-gap) / 2);
     
 }
-
 .filter-list{
     display: flex;
     flex-direction: column;
@@ -200,8 +198,25 @@ a:hover{
 /*------ Medium Viewport--------*/
 
 @media screen and (min-width:  40em) {
-    .page-header{
-        grid-template-columns: auto auto auto auto;
+    
+    .navigation{
+        grid-row: 2;
+        grid-column: span 3;
+        padding: 0;
+        
+    }
+    .nav-toggle{
+        display: none;
+    }
+    .menu,.menu > li{
+        display: flex;
+        column-gap: var(--pad-and-gap) ;
+        justify-content: center;
+        font-size: 1.1em;
+    }
+    .menu > li >a:hover{
+        color: var(--col-3);
+
     }
     .products{
         margin-top: var(--pad-and-gap) ;
@@ -212,34 +227,42 @@ a:hover{
     .heading, .pagination{
         grid-column: span 2;
     }
+    .heading >h1{
+        font-size: 2.5em;
+        padding: 1em 0 1em 0
+    }
     
 }
 
 /*------ Large Viewport--------*/
 
-@media screen and (min-width:  70em) {
+@media screen and (min-width:  60em) {
 
     .page-header{
-        grid-template-columns:  auto 1fr auto auto auto;
+        grid-template-columns:  auto auto auto auto auto;
+        font-size: 1.1em;
     }
     .nav-toggle{
         display: none;
     }
     .search{
-        
+        padding:  var(--pad-and-gap) 0px  var(--pad-and-gap) 0px;
         grid-row: 1;
         grid-column: 3;
     
     }
     .navigation{
-        
+        padding:  var(--pad-and-gap) 0px  var(--pad-and-gap) 0px;
         grid-row: 1;
-        grid-column: 4;
+        grid-column: 2;
+       
     }
 
     .your-products{
+        padding:  var(--pad-and-gap) 0px  var(--pad-and-gap) 0px;
         grid-row: 1;
         grid-column: 5;
+        gap: calc(var(--pad-and-gap)/2);
 
     }
     .menu,.menu > li,.submenu,.filter-list{
@@ -248,17 +271,15 @@ a:hover{
     .submenu{
         padding-left: 0;
     }
-    .products{
-        display: block;
-    }
-    .filter-options{
-        display: flex;
-       
+    .heading >h1{
+        font-size: 3em;
+        padding: 1.5em 0 1.5em 0
     }
     .results{
         display: grid;
-        grid-template-columns:  1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
+    
     .subheading{
         grid-column: span 2;
     }
@@ -267,11 +288,6 @@ a:hover{
 /*------ Extra Large Viewport--------*/
 
 @media screen and (min-width:  90em) {
-
-    .filter-options{
-        display: flex;
-        justify-content: flex-start;
-    }
     .results{
         display: grid;
         grid-template-columns:  1fr 1fr 1fr;
